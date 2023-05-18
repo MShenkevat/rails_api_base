@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
-ruby '~> 3.1.2'
+# ruby '~> 3.1.2'
+ruby '~> 3.2.2'
 
 gem 'rails', '~> 7.0.4.3'
 
@@ -17,6 +18,7 @@ gem 'jbuilder', '~> 2.10'
 gem 'oj', '~> 3.9', '>= 3.9.2'
 gem 'pagy', '~> 4.0'
 gem 'pg', '~> 1.1', '>= 1.1.4'
+# gem 'pg', '~> 1.5', '>= 1.5.3'
 gem 'puma', '~> 5.6'
 gem 'pundit', '~> 2.1'
 gem 'rack-cors', '~> 1.0', '>= 1.0.6'
@@ -24,6 +26,7 @@ gem 'sass-rails', '~> 6.0.0'
 gem 'sendgrid', '~> 1.2.4'
 gem 'sprockets', '~> 3.7.2'
 gem 'yaaf', '~> 2.2'
+gem 'wdm', '>= 0.1.0'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password

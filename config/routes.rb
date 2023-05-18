@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'topics/index'
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   ExceptionHunter.routes(self)
@@ -18,6 +19,14 @@ Rails.application.routes.draw do
       resources :settings, only: [] do
         get :must_update, on: :collection
       end
+      
+      # TOPICS CONTROLLER ROUTES
+      get :topics, to: 'topics#index'
+      get 'topics/show'
+      post :topics, to: 'topics#create'
+      get 'topics/update'
+      get 'topics/destroy'
+
     end
   end
 end

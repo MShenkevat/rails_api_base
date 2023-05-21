@@ -11,4 +11,6 @@
 class Topic < ApplicationRecord
     validates :label, presence: true, length: { maximum: 100 }
     validates :icon, presence: true, length: { maximum: 50 }
+
+    has_many :targets
 end

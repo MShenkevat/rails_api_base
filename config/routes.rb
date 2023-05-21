@@ -27,6 +27,14 @@ Rails.application.routes.draw do
       get 'topics/update'
       get 'topics/destroy'
 
+      # TARGETS CONTROLLERS ROUTES
+      resources :targets, only: [:index, :create, :show, :update, :destroy] do
+        get :targets, to: 'targets#index'
+        get 'targets/show'
+        post :targets, to: 'targets#create'
+        get 'targets/update'
+        delete :targets,  only: [:destroy]
+      end
     end
   end
 end

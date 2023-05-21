@@ -4,8 +4,8 @@ class Api::V1::TopicsController < ApplicationController
   
   def index
     # head :ok
-    topics = Topic.all
-    render json: topics, status: 200
+    @topics = Topic.all
+    render json: @topics
   end
 
   def show
